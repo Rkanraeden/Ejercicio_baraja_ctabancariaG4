@@ -18,11 +18,11 @@ class Baraja
     attr_accessor
     def initialize()
         @cartas = cartas
-        carta.numero.each do |x|
-        carta.pinta.each do |y|
-        @cartas 
+        carta.numero.map do |x|
+        carta.pinta.map do |y|
+               
         end
-
+        end
     end
 
     def barajar
@@ -36,16 +36,14 @@ class Baraja
     def repatir_mano
         @cartas[0..4]
     end
-end
-
-
- # definimos los 2 arreglos el primero con los númerós del 1 al 13 y el segundo con las letras de cada pinta.
+end 
+# definimos los 2 arreglos el primero con los númerós del 1 al 13 y el segundo con las letras de cada pinta.
 numeros = [1, 2, 3 , 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 pintas = ['T', 'E', 'D', 'C']
 
+# instanciando las clases
 carta1 = Carta.new(numeros, pintas)
-
-baraja = Baraja.new(carta1)
+baraja1 = Baraja.new(carta1)
 
 print baraja.barajar
 print baraja.sacar

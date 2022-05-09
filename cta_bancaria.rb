@@ -5,16 +5,6 @@
 # método restará del saldo actual el monto y aumentará el saldo de la otra cuenta en el mismo
 # monto. (1 Punto)
 
-# Es necesario que exista el attr_writer o attr_accessor del saldo para acceder al
-# saldo de la otra cuenta.
-
-# 4. Probar creando dos cuentas cada una con un saldo de 5000 y transferir el total de una
-# cuenta a la otra.
-# 5. Crear el constructor de Usuario que reciba el nombre del usuario y un arreglo con al
-# menos 1 cuenta bancaria. (1 Punto)
-
-# 6. Crear el método saldo total que devuelva la suma de todos los saldos del usuario. (1
-# Punto)
 
 class CuentaBancaria
     attr_accessor :saldo
@@ -36,6 +26,20 @@ c2 = CuentaBancaria.new("banco", "002", 0)
 
 puts "saldo 1: #{c1.saldo}"
 puts "saldo 2: #{c2.saldo}"
+
+
+# Es necesario que exista el attr_writer o attr_accessor del saldo para acceder al
+# saldo de la otra cuenta.
+
+# 4. Probar creando dos cuentas cada una con un saldo de 5000 y transferir el total de una
+# cuenta a la otra.
+# 5. Crear el constructor de Usuario que reciba el nombre del usuario y un arreglo con al
+# menos 1 cuenta bancaria. (1 Punto)
+
+# 6. Crear el método saldo total que devuelva la suma de todos los saldos del usuario. (1
+# Punto)
+
+
 
 # class Usuario
  # end
